@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 *{
     font-family: 'Montserrat', sans-serif;
-
+    transition: all 0.5s ease;
 }
 
 .app{
-    background-color: rgba(0, 0, 0, 0.878);
+    background-color: white;
     height: 100vh;
     width: 100vw;
     color: white;
@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: black black;
 }
 .navbar > img {
     height: 50px;
@@ -31,4 +32,59 @@
     padding: 5px;
     height: 35px;
     margin-right: 5vw;
+}
+.navbar > button:focus {
+    outline: none;
+}
+.navbar > button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ride{
+    margin-top: 5vmax;
+    background-color: rgba(0, 0, 0, 0.88);
+    height: 50vh;
+    width: 20vw;
+    padding: 3vmax;
+    border-radius: 10px;
+}
+.ride > h2 {
+    color: #FF6A6A;
+}
+.ride > h1 {
+    font-size: 30px;
+    margin-bottom: 2vmax;
+}
+.ride > input {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0.5vmax;
+    width: 16vmax;
+    font-size: 15px;
+    margin-top: 0.3vmax;
+    border-radius: 1vmax;
+}
+.ride > input:focus {
+    outline: none;
+}
+.ride > button {
+    margin-top: 2vmax;
+    background-color: #D9D9D9;
+    color: black;
+    font-weight: bold;
+    width: 17vmax;
+    font-size: 18px;
+    border: none;
+}
+.ride > button:focus {
+    outline: none;
+}
+.ride > button:hover{
+    background-color: rgba(255, 255, 255, 0.754);
 }
