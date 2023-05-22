@@ -1,30 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-*{
+
+* {
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s ease;
 }
 
-.app{
+.app {
     background-color: white;
     height: 100vh;
     width: 100vw;
     color: white;
 }
-.navbar{
+
+.navbar {
     background-color: #FFD105;
     height: 50px;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: black black;
 }
-.navbar > img {
+
+.navbar>img {
     height: 50px;
     border-radius: 30px;
     margin-left: 5vw;
 }
-.navbar > button {
+
+.navbar>button {
     outline: none;
     border: none;
     color: white;
@@ -33,19 +36,23 @@
     height: 35px;
     margin-right: 5vw;
 }
-.navbar > button:focus {
+
+.navbar>button:focus {
     outline: none;
 }
-.navbar > button:hover {
+
+.navbar>button:hover {
     background-color: rgba(255, 255, 255, 0);
     color: black;
 }
+
 .head {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ride{
+
+.ride {
     margin-top: 5vmax;
     background-color: rgba(0, 0, 0, 0.88);
     height: 50vh;
@@ -53,14 +60,30 @@
     padding: 3vmax;
     border-radius: 10px;
 }
-.ride > h2 {
+
+.ride>h2 {
     color: #FF6A6A;
 }
-.ride > h1 {
+
+.ride>h1 {
     font-size: 30px;
     margin-bottom: 2vmax;
 }
-.ride > input {
+.ride > div {
+    display: flex;
+}
+.ride > div > Button{
+    color: white;
+    outline: none;
+    border: none;
+}
+.ride > div > Button:focus{
+    outline: none;
+}
+.ride > div > Button:hover{
+    color: rgb(68, 152, 255);
+}
+.ride>div>input {
     background-color: black;
     border: none;
     color: white;
@@ -70,10 +93,12 @@
     margin-top: 0.3vmax;
     border-radius: 1vmax;
 }
-.ride > input:focus {
+
+.ride>div>input:focus {
     outline: none;
 }
-.ride > button {
+
+.ride>button {
     margin-top: 2vmax;
     background-color: #D9D9D9;
     color: black;
@@ -82,9 +107,41 @@
     font-size: 18px;
     border: none;
 }
-.ride > button:focus {
+
+.ride>button:focus {
     outline: none;
 }
-.ride > button:hover{
+
+.ride>button:hover {
     background-color: rgba(255, 255, 255, 0.754);
+}
+
+@media screen and (max-width:950px) {
+    .bg {
+        display: none;
+    }
+    .app {
+        background-color: rgba(0, 0, 0, 0.876);
+    }
+    .ride {
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .ride > div > input {
+        width: 35vw;
+    }
+    .ride > button {
+        width: 45vw;
+    }
+    .ride {
+        margin-top: 10vh;
+    }
+    .p1{
+        margin-top: 5vh;
+    }
+}
+@media screen and (max-width:450px) {
+    .ride > div > input {
+        width: 55vw;
+    }
 }
