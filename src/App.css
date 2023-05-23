@@ -3,6 +3,8 @@
 * {
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .app {
@@ -55,7 +57,7 @@
 .ride {
     margin-top: 5vmax;
     background-color: rgba(0, 0, 0, 0.88);
-    height: 50vh;
+    height: 55vh;
     width: 20vw;
     padding: 3vmax;
     border-radius: 10px;
