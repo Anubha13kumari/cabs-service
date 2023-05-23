@@ -10,7 +10,7 @@
     margin-left: 5vmax;
     margin-top: 4vmax;
     width: 30vw;
-    height: 75vh;
+    height: 77vh;
     background-color: rgba(0, 0, 0, 0.854);
     border-radius: 20px;
 }
@@ -18,6 +18,7 @@
     width: 60vw;
     height: 73vh;
     margin-left: 5vmax;
+    margin-top: 3vmax;
 }
 .circle1 {  
     position: relative;
@@ -48,19 +49,100 @@
 .c1,.c2{
     display: flex;
     align-items: center;
+    height: 5vmax;
+    background-color: rgba(0, 0, 0, 0.5);
     /* background-color: red;    */
+    height: 110%;
+}
+.c2{
+   height: 5vmax;
 }
 .c1 > h3 {
-    color:white;
-    margin-top: 2vmax;
-    margin-left: 1vmax;
-    font-size: 15px;
-    width: 80%;
-}
-.c2 > h3 {
     color:white;
     /* margin-top: 2vmax; */
     margin-left: 1vmax;
     font-size: 15px;
     width: 80%;
+    padding-top: 1vmax;
+}
+.c2 > h3 {
+    color:white;
+    margin-top: -1.2vmax;
+    margin-left: 1vmax;
+    font-size: 15px;
+    width: 80%;
+}
+.cab_details {
+ margin-left: 2vmax;   
+}
+.cab_details > h2 {
+    padding: 1vmax 0;
+}
+.cab_details> Button{
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    margin-top: 1vmax;
+    font-weight: bold;
+}
+.cab_details> Button:focus{
+    outline: none;
+}
+.cab_details> Button:hover{
+    background-color: rgb(190, 190, 190);
+}
+
+.cab_details > h2 > span {
+    color: rgb(149, 253, 149);
+}
+.cab_footer {
+    background-color: #CACAD8;
+    width: 30vw;
+    height: 15vh;
+    border-radius: 5px;
+    margin-top: 3vmax;
+    display: flex;
+    color: black;
+}
+.cab_footer > img {
+    height: 13vh;
+}
+.cab_footer_info{
+    margin-left: 1vmax;
+    margin-top: 1vmax;
+}
+.seats {
+    margin-left: 1vmax;
+    padding-top: 1vmax;
+    border-left: rgba(0, 0, 0, 0.481) 1px solid;
+    padding-left: 1vmax;
+}
+.seats > input {
+    outline: none;
+    border: none;
+    width: 5vmax;
+}
+
+
+@media screen and (max-width:950px){
+    .bgCab {
+        display: none;
+    }
+    .cabSelect__container {
+       width: 100vw;
+       height: 100vh;
+       margin-left: 0;
+       margin-top: 0;
+       border-radius: 0;
+    }
+    .cab_footer {
+        width: 100vw;
+        position: relative;
+    }
+    .seats > input {
+        width: 15vmax;
+    }
+    .c1,.c2 {
+        height: 10vmax;
+    }
 }
